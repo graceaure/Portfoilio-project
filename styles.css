@@ -1,0 +1,180 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: #fff;
+    text-align: center;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px 20px;
+    margin: auto;
+}
+
+header .name {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    padding: 5px 10px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+    color: #feb47b;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Sections */
+section {
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    color: #333;
+    text-align: center;
+}
+
+section h1 {
+    margin-bottom: 20px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+section h1:hover {
+    color: #feb47b;
+    transform: scale(1.05);
+}
+
+/* Vision, Mission, Hymn boxes */
+#home .portrait {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: #f9f9f9;
+    color: #333;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 80%;
+}
+
+#home .portrait h2 {
+    margin-top: 10px;
+    color: #444;
+}
+
+/* Skills */
+#skills ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#skills ul li {
+    margin: 10px 0;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+#skills ul li:hover {
+    color: #feb47b;
+    cursor: pointer;
+}
+
+/* Calculator */
+.calculator {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.calculator input {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    text-align: right;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.calculator .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.calculator button {
+    padding: 20px;
+    font-size: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.calculator button:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+.calculator button:active {
+    background-color: #777;
+    transform: scale(0.95);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    section {
+        width: 95%;
+    }
+}

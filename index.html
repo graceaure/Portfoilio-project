@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aure's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="name">Aure Grace Portfolio</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to my Website</h1>
+
+        <div class="portrait">
+            <h2>Vision</h2>
+            <p>A Research University advancing technology and innovation for sustainable development.</p>
+        </div>
+
+        <div class="portrait">
+            <h2>Mission</h2>
+            <p>We drive sustainable development through quality instruction, innovative research, community collaboration, and technological advancement.</p>
+        </div>
+
+        <div class="portrait">
+            <h2>Nemsu Hymn</h2>
+            <p>
+                “Onward with a noble mission<br>
+                Unifying with a vision;<br>
+                Glorious footprints of knowledge won<br>
+                Breeding grounds of Glocal Champions<br><br>
+                Emblem of Mindanaoan nobility<br>
+                Radiates the name of a growing NEMSU;<br>
+                North Eastern Mindanao State University<br>
+                Flying flag above the pacific blue.<br><br>
+                <strong>Refrain:</strong><br>
+                Live! Rise! Soar and Excel!<br>
+                In the NEMSU education<br>
+                Leading to a better world<br>
+                By sculpting better lives,<br>
+                The NEMSU vision, NEMSU touch<br><br>
+                N.E.M.S.U<br>
+                The laying portals of brilliant hatch<br>
+                (Repeat Refrain)<br><br>
+                <strong>Coda:</strong><br>
+                The NEMSU vision<br>
+                NEMSU touch<br>
+                NEMSU!<br><br>
+                North Eastern Mindanao State University
+            </p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h1>About</h1>
+        <p>Hi, I'm Grace Aure, a passionate web developer dedicated to building dynamic, responsive websites. I specialize in HTML, CSS, and Javascript, creating seamless user experiences that combine creativity and functionality.</p>
+    </section>
+
+    <section id="skills">
+        <h1>Skills</h1>
+        <ul>
+            <li>HTML</li>
+            <li>Web Designer</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h1>Projects</h1>
+        <h2>Basic Calculator</h2>
+        <div class="calculator">
+            <input type="text" id="display" disabled>
+            <div class="buttons">
+                <button onclick="clearDisplay()">C</button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="appendToDisplay('+')">+</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('-')">-</button>
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="appendToDisplay('*')">*</button>
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="appendToDisplay('.')">.</button>
+                <button onclick="calculate()">=</button>
+                <button onclick="appendToDisplay('/')">/</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Aure's Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
